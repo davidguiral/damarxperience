@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planificador de Viajes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧳 Tu Itinerario de Viaje Personalizado</h1>
+    <form id="formulario">
+      <label>Destino:</label>
+      <input type="text" name="destino" required>
+
+      <label>Fecha y hora de llegada:</label>
+      <input type="datetime-local" name="llegada" required>
+
+      <label>Fecha y hora de salida:</label>
+      <input type="datetime-local" name="salida" required>
+
+      <label>Preferencias (opcional):</label>
+      <input type="text" name="preferencias">
+
+      <button type="submit">Generar itinerario</button>
+    </form>
+
+    <h2>🗺️ Resultado:</h2>
+    <pre id="resultado"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
